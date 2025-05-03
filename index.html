@@ -4,29 +4,28 @@
     <!-- METADATOS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- STYLES -->
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <!-- TAILWIND-CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- GENERAL -->
     <title>Iniciar Sesion - Rubricas</title>
 </head>
 <body>
     <!-- FORMULARIO -->
-    <main>
-        <h2>Rubrica Elegante</h2>
-        <p>Crea una nueva cuenta para comenzar</p>
+    <main class="bg-[#F9FAFB] flex flex-col gap-4 p-4 min-h-screen py-16">
+        <h2 class="text-center text-2xl font-bold">Rubrica Elegante</h2>
+        <p class="text-center text-sm text-gray-600">Crea una nueva cuenta para comenzar</p>
 
-        <form action="#">
-            <label for="">Correo Electronico</label>
-            <input type="text" placeholder="Escribe tu Correo Electronico">
+        <form class="bg-white flex flex-col gap-4 max-w-[450px] m-auto my-0 w-[100%] p-8 py-12 rounded shadow-lg mt-[40px]" action="#">
+            <label class="text-sm font-semibold" for="">Correo Electronico</label>
+            <input class="p-4 bg-[#F8F9FB] py-4 text-sm outline-none rounded" type="text" placeholder="Escribe tu Correo Electronico">
 
-            <label for="">Contraseña</label>
-            <input type="password" placeholder="Escribe tu Contraseña">
+            <label class="text-sm font-semibold" for="">Contraseña</label>
+            <input class="p-4 bg-[#F8F9FB] py-4 text-sm outline-none rounded" type="password" placeholder="Escribe tu Contraseña">
 
-            <button>Iniciar Sesión</button>
-            <div>
-                <p>¿No tienes una cuenta?</p>
-                <a href="./register.html">Registrate</a>
+            <button class="bg-[#2B49A0] text-white text-sm p-4 py-3 rounded duration-300 hover:scale-[1.02]">Iniciar Sesión</button>
+            <div class="flex gap-1 justify-center">
+                <p class="text-gray-600 text-sm">¿No tienes una cuenta?</p>
+                <a class=" text-[#2B49A0] text-sm" href="./register.html">Registrate</a>
             </div>
         </form>
     </main>
